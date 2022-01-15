@@ -7,7 +7,7 @@ orbs:
   sam: circleci/aws-serverless@1.0.1
 
 jobs:
-  set-env:
+setprop:
     steps:
      - run:
         command: echo "export PATH='$PATH:~/bin'" >> $BASH_ENV
