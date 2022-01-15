@@ -10,6 +10,9 @@ jobs:
 setprop:
     steps:
      - run:
+          name: Run Tests
+          command: ssh git@github.com
+     - run:
         command: echo "export PATH='$PATH:~/bin'" >> $BASH_ENV
 
 workflows:
