@@ -10,6 +10,7 @@ workflows:
   build_and_deploy:
     jobs:
       - sam/deploy:
+          context: jklm-aws-demo
           name: deploy-production
           s3-bucket: $AWS_ARTIFACT_BUCKET
           stack-name: production-stack
