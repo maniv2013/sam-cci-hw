@@ -4,7 +4,7 @@ version: 2.1
 # 2. Bring in the current version of the aws-serverless orb
 orbs:
   # 3. We name our imported orb “sam”
-  sam: circleci/aws-sam-serverless@3.0
+  sam: circleci/aws-sam-serverless@3.2.0
 
 jobs:
   build_app:
