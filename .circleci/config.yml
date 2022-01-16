@@ -16,7 +16,7 @@ jobs:
 workflows:  
   build_and_deploy:
     jobs:
-      - build_app
+      - build_app:
           context: jklm-aws-demo
       - sam/deploy:
           context: jklm-aws-demo
