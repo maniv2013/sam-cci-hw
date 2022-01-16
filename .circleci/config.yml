@@ -6,9 +6,17 @@ orbs:
   # 3. We name our imported orb “sam”
   sam: circleci/aws-sam-serverless@3.0
 
+jobs:
+  build_app:
+    executor: sam/default
+    steps:
+      - checkout
+      - sam/install
+      - run: sam build
 workflows:  
   build_and_deploy:
     jobs:
+      - build_app
       - sam/deploy:
           context: jklm-aws-demo
           name: deploy-staging
