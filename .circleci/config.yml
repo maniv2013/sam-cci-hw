@@ -17,6 +17,7 @@ workflows:
   build_and_deploy:
     jobs:
       - build_app
+          context: jklm-aws-demo
       - sam/deploy:
           context: jklm-aws-demo
           name: deploy-staging
