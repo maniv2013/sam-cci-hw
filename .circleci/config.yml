@@ -22,4 +22,4 @@ workflows:
           name: deploy-staging
           s3-bucket: $AWS_ARTIFACT_BUCKET
           stack-name: staging-stack
-          template: template.yaml
+          template: packaged.yaml
